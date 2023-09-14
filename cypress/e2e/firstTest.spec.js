@@ -40,10 +40,12 @@ cy.get('[data-cy="imputEmail1"]')
 
 })
 
-it('second test', () =>
+it.only('second test', () =>
 
 {
-
+    cy.visit("/")
+    cy.contains("Forms").click()
+    cy.contains('Form Layouts').click()
     
 })
 
@@ -51,7 +53,7 @@ it('third test', () =>
 
 {
 
-    
+ // lalala   
 })
 
 })
